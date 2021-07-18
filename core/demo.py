@@ -6,6 +6,9 @@ import os
 import numpy as np
 from deploy import inference_img_whole
 
+import sys, codecs
+sys.stdout = codecs.getwriter("utf-8")(sys.stdout)
+
 if __name__ == "__main__":
 
     # input file list
